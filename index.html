@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
@@ -96,10 +96,12 @@
                     <label for="name" class="label_title">Название конференции</label>
                     <input type="text" id="name">
                 </form>
+
                 <form class="main_form">
                     <label for="public" class="label_title">Целевая аудитория</label>
                     <input type="text" id="public">
                 </form>
+
                 <div class="main_form">
                     <h1 class="label_title">Организационный комитет</h1>
                     <form class="main_form">
@@ -111,16 +113,37 @@
                             <label for="deputy_editor" class="label_subtitle">Заместитель председателя</label>
                             <input type="text" id="deputy_editor">
                         </form>
-                    </div>                    
-                    <button onclick="addForm()" class="add_btn">Добавить</button>
-
-                    <div id="forms_container">
-                        <form class="main_form">
-                            <label for="member" class="label_subtitle">Члены организационного комитета</label>
-                            <input type="text" id="member">
-                        </form>
                     </div>
+                    <button onclick="addForm()" class="add_btn">Добавить</button>
+                
+                    <form class="main_form">
+                        <label for="member" class="label_subtitle">Члены организационного комитета</label>
+                        <input type="text" id="member">
+                    </form>
+                    <div id="member_forms_container"></div>
                     <button onclick="addMemberForm()" class="add_btn">Добавить</button>
+                </div>
+
+                <div class="main_form">
+                    <h1 class="label_title">Предисловие</h1>
+                    <form class="main_form">
+                        <label for="preface_name" class="label_subtitle">Название</label>
+                        <input type="text" id="preface_name">
+                    </form>
+
+                    <form class="main_form_1">
+                        <label for="preface_description" class="label_subtitle">Описание</label>
+                        <textarea id="preface_description"></textarea>
+                    </form>
+                </div>
+
+                <div class="main_form">
+                    <h1 class="label_title">Этапы конференции</h1>
+                    <form class="main_form">
+                        <label for="stage" class="label_subtitle">Этап 1</label>
+                        <input type="text" id="stage">
+                    </form>
+                    <button onclick="addStageForm()" class="add_btn">Добавить</button>
                 </div>
             </div>
         </div>
