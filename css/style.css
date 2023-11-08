@@ -1,0 +1,71 @@
+@import "./reset.css";
+
+body {
+    font-family: 'Bitter', serif;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --container-width: 1780px;
+    --container-pading: 15px;
+}
+
+.container {
+    max-width: var(--container-width);
+    padding: 0 var(--container-pading);
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.none {
+    display: none !important;
+}
+
+/* header */
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(309deg, #EF7D00 13.81%, #3C218C 67.72%);
+    padding-top: 44px;
+    color: #FEFEFE;
+}
+
+.header_top {
+    margin-top: 40px;
+    margin-bottom: 280px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 80px;
+}
+
+
+.nav_list{
+    display: flex;
+    column-gap: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.header_title{
+    font-size: 62px;
+    font-weight: 700;
+    margin-bottom: 55px;
+}
+
+.header_subtitle{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 150px;
+}
+
+.header_icon{
+    margin-left: 90%;
+}
+
